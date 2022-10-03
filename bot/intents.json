@@ -1,0 +1,71 @@
+{
+  "intents": [
+    {"tag": "greeting",
+     "patterns": ["Quoi de neuf?", "Salut", "Y a-t-il quelqu'un ici?","ça va?","Coucou", "Bonjour thierry", "On dit quoi?", "Thierry"],
+     "responses": ["Bonjour, mon nom est Thierry", "Hey :-), bienvenue ! ", "Salut, je peux te guider maintenant"]
+     
+    },
+    {"tag": "goodbye",
+     "patterns": ["Au revoir", "A plus tard", "Heureux d'avoir discuté avec toi, bye", "A la prochaine"],
+     "responses": ["Au revoir!", "Merci pour ta visite", "Bye! Prends soin de toi", " Bye"]
+     
+    },
+    {"tag": "thanks",
+     "patterns": ["Merci", "Merci Thierry", "Cool", "Super, merci", "Merci pour tes infos"],
+     "responses": ["Heureux d'avoir rendu service!", "A toutefois, merci!", "C'était un plaisir"]
+    
+    },
+    {"tag": "noanswer",
+     "patterns": [],
+     "responses": ["Désolé, je ne peux pas vous comprendre", "Désolé, j'ai besoin de plus de précision pour vous comprendre", "Pas certain de vous comprendre"],
+     "context": [""]
+    },
+    {"tag": "options",
+     "patterns": ["Comment peux-tu m'aider?", "Thierry, que sais-tu faire?", "C'est quoi ton rôle?", "Parles moi de toi?", "Enchanté thierry", "What support is offered"],
+     "responses": ["Je peux te renseigner sur la maladie de la drépanocytose, ses symptômes et le dépistage", " Besoin d'orientation? Je peux t'orienter vers un centre de traitement ou de prise en charge"]
+     
+    },
+    {"tag": "drepanocytose_meaning",
+     "patterns": ["C'est quoi la drepanocytose?", "Thierry, définis moi la drepanocytose", "Que sais-tu de la drepanocytose?", "Qu'est-ce-que la drepanocytose?", "Drépanocytose, définition" ],
+     "responses": ["Selon l’OMS, la drépanocytose est une maladie génétique liée à une anomalie de l'hémoglobine. Cette  maladie touche l’hémoglobine, protéine du globule rouge qui transporte l’oxygène aux organes : les globules rouges sont déformés, prenant l’aspect d’une faucille ou d’un croissant en cas de diminution de l’oxygène. On l’appelle aussi l’anémie falciforme ou Hémoglobinose S"]
+     
+    },
+    {"tag": "drepanocytose_transmission",
+     "patterns": ["Comment attrape-t-on la drépanocytose?", "Sais-tu comment attraper la drépanocytose?", "Quel est le mode de transmission de la drépanocytose?", "Comment devient-on drépanocytaire?" ],
+     "responses": ["Maladie héréditaire dite « récessive», la drépanocytose se manifeste chez les personnes ayant reçu un gène muté de chacun de ses deux parents. Il existe donc des porteurs sains, ayant un seul gène muté et qui ne présentent aucun signe de la maladie"]
+     
+    },
+    {"tag": "drepanocytose_diagnosis",
+     "patterns": ["Thierry, commment savoir si je suis drépanocytaire?", "Comment savoir si on est drépanocytaire?", "Comment diagnostiquer la drépanocytose?" ],
+     "responses": ["Le diagnostic se fait par une simple prise de sang, dans un centre de dépistage", "S'il vous plait, vous pouvez vous rapprocher des centres de dépistage pour le diagnostic"]
+    
+    },
+    {"tag": "drepanocytose_diagnosis-schedule",
+     "patterns": ["Quand peut-on se faire dianostiquer?", "Thierry, est ce obligatoire de se faire diagnostiquer?", "quand et comment peut-on se faire diagnostiquer?"],
+     "responses": ["Le dépistage de la drépanocytose devrait être automatique lors du bilan prénuptial, du bilan préconception, à la naissance, lors des pesés dès 9 mois ou devant toute notion de drépanocytose dans la famille "]
+     
+    },
+    {"tag": "drepanocytose_astuces",
+     "patterns": ["Que faire si on a un enfant drépanocytaire?", "Comment savoir si mon enfant est drépanocytaire?", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+     "responses": ["Veuillez vous rapprocher d’un centre de santé afin de débuter un suivi", " Le patient drépanocytaire devrait être vu au moins un fois par trimestre  pour un bon suivi. Sa vaccination devrait être à jour ainsi que sa prophylaxie anti- palustre"]
+     
+    },
+    {"tag": "drepanocytose_symptômes",
+     "patterns": ["Thierry, dis moi comment reconnaitre la drépanocytaire?", "Quels sont les signes de la drépanocytose?", "Comment se manifeste la drépanocytose?", "Donne moi la liste des symptômes de la maladie"],
+     "responses": ["Les manifestations cliniques apparaissent à partir de l’âge de 3 mois. Elles sont très variables d’un individu à l’autre et imprévisibles pour une même personne. Ce sont principalement:une anémie chronique (pâleur, vertiges, essoufflement, fatigue,…) due à la diminution de la durée de vie des globules rouges, plus fragiles.Des crises très douloureuses dites « vaso-occlusives», chroniques ou aiguës au niveau des os et des articulations, dues à l’occlusion des petits vaisseaux par les globules rouges déformés et à une mauvaise oxygénation des organes et tissus de l’organisme.La répétition des infections, surtout chez les enfants"]
+    
+    },
+    {"tag": "drepanocytose_prevention", 
+     "patterns": ["Que faire en cas de crises?", "Comment reconnaître une crise de drépanocytose?"],
+     "responses": ["Veuillez respecter ce qu’on appelle les règles d’or du drépanocytaire : Prévenir les infections: hygiène corporelle et dentaire impeccable, antibiothérapie et vaccination systématique dès la naissance. Faire attention à sa température. Si la température est >38.5°C, il faut aller rapidement consulter un médecin. Eviter la déshydratation, car  celle-ci peut amorcer des crises et accroitre la viscosité du sang.il faut donc boire beaucoup d’eau environ 3l/j. L’été, on veillera aussi à réduire l’exposition au soleil. S’assurer de ne jamais manquer d’oxygène. Eviter les endroits mal aérés, enfumés, l'altitude et les voyages en avion non ou mal pressurisés, les refroidissements, la station debout prolongée. Le drépanocytaire doit éviter de fournir de gros efforts physiques. C’est ainsi que l’on ne doit pas le laisser faire des durs travaux, porter des gros poids. Eviter surtout les jeux violents et les sports de compétition.Très bien s’alimenter. les carences alimentaires exagèrent l’anémie et augmentent la vulnérabilité aux infections. Il faut donc s’assurer que l’alimentation fournit un apport accru en folate, fer et protéines. Vérifier la présence des signes d’hémolyses (destruction de globules rouges):yeux jaune, urine foncées. Veiller à ne pas nuire à la circulation du sang (éviter de porter des vêtements trop serrés, de se croiser les jambes etc..), car cela peut, entre autre, faire enfler les extrémités ou causer des douleurs. Prévoyez  un suivi régulier par votre médecin traitant, même quand tout va bien, n’interrompez pas votre traitement sans avis médical."]
+     
+    },
+    {"tag": "search_hospital_by_params",
+     "patterns": ["Dis moi où trouver un médécin?", "Où trouver un centre hospitalier?", "Où s'orienter en cas de questions sur la drépanocytose?"],
+     "responses": ["Hôpital Général Adolphe SICE, Avenue Fayette TCHIMBO, Centre-Ville Arrondissement 1 LUMUMBA, Tél: 222942198/222942199", " Service d’hématologie clinique, Dr ONDZOTTO IBATTA, Hématologue Clinicienne. Jour de consultation : Du Lundi au Vendredi de 8H à 14H ", "Centre de référence de la drépanocytose, Dr MAKOSSO Marisca Pédiatre. Jour de consultation : Du Lundi au Vendredi de 8H à 14H"]
+     
+    }
+    
+]
+
+}
